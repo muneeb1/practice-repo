@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
       {
         id: 2,
         imgUrl: "assets/images/Tile_Image.jpg",
-        enabled: true,
+        enabled: false,
         price: 7.50,
         name: "KARIBA REDD+ -ZIMBABWE",
         title: "Reduced Emissions from Deforestation and Degradation",
@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
       {
         id: 4,
         imgUrl: "assets/images/Tile_Image.jpg",
-        enabled: true,
+        enabled: false,
         price: 7.50,
         name: "KARIBA REDD+ -ZIMBABWE",
         title: "Reduced Emissions from Deforestation and Degradation",
@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
       {
         id: 5,
         imgUrl: "assets/images/Tile_Image.jpg",
-        enabled: true,
+        enabled: false,
         price: 7.50,
         name: "KARIBA REDD+ -ZIMBABWE",
         title: "Reduced Emissions from Deforestation and Degradation",
@@ -79,7 +79,7 @@ export class AppComponent implements OnInit {
       {
         id: 6,
         imgUrl: "assets/images/Tile_Image.jpg",
-        enabled: true,
+        enabled: false,
         price: 7.50,
         name: "KARIBA REDD+ -ZIMBABWE",
         title: "Reduced Emissions from Deforestation and Degradation",
@@ -90,7 +90,7 @@ export class AppComponent implements OnInit {
       {
         id: 7,
         imgUrl: "assets/images/Tile_Image.jpg",
-        enabled: true,
+        enabled: false,
         price: 7.50,
         name: "KARIBA REDD+ -ZIMBABWE",
         title: "Reduced Emissions from Deforestation and Degradation",
@@ -102,7 +102,7 @@ export class AppComponent implements OnInit {
         id: 8,
         imgUrl: "assets/images/Tile_Image.jpg",
         enabled: true,
-        price: 7.50,
+        price: 22.50,
         name: "KARIBA REDD+ -ZIMBABWE",
         title: "Reduced Emissions from Deforestation and Degradation",
         weight: 957842,

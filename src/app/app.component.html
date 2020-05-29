@@ -3,7 +3,7 @@
   <div class="col-sm-6" *ngFor="let project of projects; let i = index">
     <div class="card-group">
       <div class="card custom-card">
-        <div class="img-top-right">
+        <div class="img-top-right" *ngIf="project.enabled">
           <button class="btn btn-success">Buy Now</button>
           <p class="price">${{project.price}} / tons</p>
         </div>
