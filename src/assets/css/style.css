@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: aquamarine;
+}
+.custom-card {
+    margin: 9px;
+    width:100%;
+}
+.header-img {
+    margin: 9px 9px 1px 9px;
+    width:100%;
+}
+.img-text{
+    position: absolute;
+    top: 46%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    padding: 2px;
+}
+.img-top-right{
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    color: white;
+    border-radius: 4px;
+    padding: 2px;
+}
+.price {
+    position: absolute;
+    top: 100%;
+    left: 8%;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    padding: 1px;
+}
