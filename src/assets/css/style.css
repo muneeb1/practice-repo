@@ -1,20 +1,25 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: aquamarine;
+}
+.main-container {
+    width:98%;
 }
 .custom-card {
-    margin: 9px;
+    margin: 9px 0px 0px 9px;
     width:100%;
 }
 .header-img {
     margin: 9px 9px 1px 9px;
-    width:100%;
+    width:99%;
+    top: 0;
+    left: 0;
+    height: auto;
 }
 .img-text{
-    position: absolute;
-    top: 46%;
-    left: 16%;
+    position: absolute;  
+    top: 164px;
+    left: 119px;
     transform: translate(-50%, -50%);
     color: white;
     background-color: black;
