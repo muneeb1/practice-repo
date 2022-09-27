@@ -10,7 +10,8 @@ pipeline {
     stages {
         stage('Packages') {
             steps {
-                echo 'npm install...'
+                echo 'Installing...'
+                sh 'npm i @angular/cli@9.1.0-rc.0'
                 sh 'npm install'
             }
         }
