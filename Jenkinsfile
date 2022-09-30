@@ -15,7 +15,7 @@ pipeline {
         stage('Packages') {
             steps {
                 echo "Installing..."
-                sh 'fapt-get update && apt-get install zip unzip -y'
+                sh 'apt-get update && apt-get install zip unzip -y'
                 sh 'npm install'
             }
         }
@@ -39,7 +39,7 @@ pipeline {
             echo 'I am unstable :/'
         }
         failure {
-            mail to: "${EMAIL}",
+            mail to: "${EMAIL}", // It will not work for now, as Email configuration setup is pending on Jenkins
              subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
              body: "Something is wrong with ${env.BUILD_URL}"
         }
