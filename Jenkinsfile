@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Packages') {
             steps {
-                echo 'Installing... $EMAIL ${EMAIL}'
+                echo "Installing... $EMAIL ${EMAIL}"
                 sh 'fapt-get update && apt-get install zip unzip -y'
                 sh 'npm install'
             }
@@ -39,7 +39,7 @@ pipeline {
             echo 'I am unstable :/'
         }
         failure {
-            mail to: '$EMAIL',
+            mail to: "$EMAIL",
              subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
              body: "Something is wrong with ${env.BUILD_URL}"
         }
