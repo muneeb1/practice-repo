@@ -12,7 +12,8 @@ pipeline {
         stage('Packages') {
             steps {
                 echo 'Installing...'
-                sh 'apt-get install zip -y && npm install'
+                sh 'apt-get update && apt-get install zip unzip -y'
+                sh 'npm install'
             }
         }
         stage('Build') {
