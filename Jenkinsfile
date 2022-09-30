@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 
 pipeline {
+    
     agent {
         docker {
             image 'node:14'
@@ -18,13 +19,14 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'npm run build'
-                sh 'ls -ltr'
+                sh 'zip dist.zip dist'
             }
         }
     }
+
     post {
         always {
-            archiveArtifacts artifacts: 'dist', fingerprint: true
+            archiveArtifacts artifacts: 'dist.zip', fingerprint: true
         }
     }
 }
