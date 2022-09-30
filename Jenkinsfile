@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'npm run build'
-                sh 'zip dist.zip dist'
+                sh 'zip dist.zip dist/angular-trial/*'
             }
         }
     }
