@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Packages') {
             steps {
-                echo 'Installing...'
+                echo 'Installing... $EMAIL ${EMAIL}'
                 sh 'fapt-get update && apt-get install zip unzip -y'
                 sh 'npm install'
             }
