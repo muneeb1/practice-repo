@@ -18,6 +18,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'npm run build'
+                sh 'ls -ltr'
             }
         }
     }
