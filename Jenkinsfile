@@ -12,7 +12,7 @@ pipeline {
         stage('Packages') {
             steps {
                 echo 'Installing...'
-                sh 'npm install'
+                sh 'sudo apt install zip && npm install'
             }
         }
         stage('Build') {
