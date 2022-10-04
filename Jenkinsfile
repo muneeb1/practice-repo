@@ -26,6 +26,16 @@ pipeline {
                 sh 'zip dist.zip dist/angular-trial/*'
             }
         }
+        stage('Sanity check') {
+            steps{
+                input(message: 'Does the staging env looks good?')
+            }
+        }
+        stage('Deploy'){
+            steps{
+                echo 'deploying...'
+            }
+        }
     }
 
     post {
