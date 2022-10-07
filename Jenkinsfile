@@ -2,12 +2,13 @@
 
 pipeline {
     
-    agent {
+    /*agent {
         docker {
             image 'node:14'
             args '-u root'
         }
-    }
+    }*/
+    agent { label 'Linux-agent' }
     environment {
         EMAIL = credentials('mail')
     }
