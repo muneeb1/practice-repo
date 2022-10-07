@@ -8,7 +8,10 @@ pipeline {
             args '-u root'
         }
     }*/
+    
     agent { label 'Linux-agent' }
+    tools {nodejs "NODEJS"} // not needed for docker agent
+
     environment {
         EMAIL = credentials('mail')
     }
