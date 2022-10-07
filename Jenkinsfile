@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo "Installing..."
                 sh 'sudo apt-get update && sudo apt-get install zip unzip -y' // remove sudo when need to run in docker container
-                sh 'npm install'
+                sh 'npm ci'
             }
         }
         stage('Build') {
