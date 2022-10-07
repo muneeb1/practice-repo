@@ -5,7 +5,7 @@ on: push
 jobs:
   BUILD:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - id: CHECKOUT
         name: Checkout container source code
