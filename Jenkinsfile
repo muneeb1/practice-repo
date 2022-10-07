@@ -10,7 +10,7 @@ pipeline {
     }*/
     
     agent { label 'Linux-agent' }
-    // tools {nodejs "NodeJS"} // not needed for docker agent
+    tools {nodejs "NodeJS"} // not needed for docker agent
 
     environment {
         EMAIL = credentials('mail')
