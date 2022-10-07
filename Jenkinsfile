@@ -16,7 +16,7 @@ pipeline {
         stage('Packages') {
             steps {
                 echo "Installing..."
-                sh 'sudo apt-get update && apt-get install zip unzip -y' // remove sudo when need to run in docker container
+                sh 'sudo apt-get update && sudo apt-get install zip unzip -y' // remove sudo when need to run in docker container
                 sh 'npm install'
             }
         }
