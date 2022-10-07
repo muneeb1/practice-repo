@@ -1,0 +1,25 @@
+name: Verify
+
+on: push
+
+jobs:
+  BUILD:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - id: CHECKOUT
+        name: Checkout container source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          # persist-credentials: false
+      # - name: Configure git
+      #   run: git config --global url."https://${{ secrets.token }}@github.com/trilogy-group".insteadOf "https://github.com/trilogy-group"
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Npm Install
+        run: npm ci
+      - name: Build
+        run: npm run build
+        
