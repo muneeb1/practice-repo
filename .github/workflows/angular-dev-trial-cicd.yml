@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 0
           # persist-credentials: false
       # - name: Configure git
-      #   run: git config --global url."https://${{ secrets.token }}@github.com/trilogy-group".insteadOf "https://github.com/trilogy-group"
+      #   run: git config --global url."https://${{ secrets.token }}@github.com/<your-org>".insteadOf "https://github.com/<your-org>"
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
