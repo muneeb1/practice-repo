@@ -9,9 +9,9 @@ pipeline {
         }
     }
 
-    environment {
-        JIRA_PAT = credentials('jira_pat')
-    }
+    // environment {
+    //     JIRA_PAT = credentials('jira_pat')
+    // }
     stages {
         stage('Packages') {
             steps {
