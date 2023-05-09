@@ -4,7 +4,6 @@ import os
 import argparse
 import config
 
-# Bearer token
 token = os.environ.get('JIRA_PAT')
 
 # Headers with bearer token
