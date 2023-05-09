@@ -31,10 +31,5 @@ pipeline {
                 """
             }
         }
-        stage('Sanity check') {
-            steps{
-                input(message: 'Does the staging env looks good?')
-            }
-        }
     }
 }
