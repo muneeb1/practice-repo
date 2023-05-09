@@ -24,8 +24,8 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh """
+                cd jira_automation_jenkins
                 python -m venv venv && . ./venv/bin/activate
-                ls -ltr
                 pip install -r requirements.txt
                 python main.py -k "DUMMY3" -n "DUMMYTESTING" -pk "software" -pl "abcd"
                 """
