@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo "Installing..."
                 sh 'apt-get update'
-                sh 'export JIRA_PAT='"${JIRA_PAT}"
+                sh 'export JIRA_PAT=test'
             } 
         }
         stage('Build') {
