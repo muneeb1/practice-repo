@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env groovy
 
 pipeline {
     
@@ -23,7 +23,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'python -m venv venv && source venv/bin/activate'
+                sh 'python -m venv venv && . ./venv/bin/activate'
                 sh 'pip install -r requirements.txt'
                 sh 'python main.py -k "DUMMY3" -n "DUMMYTESTING" -pk "software" -pl "abcd"'
             }
