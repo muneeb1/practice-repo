@@ -24,6 +24,8 @@ def create_project(key, name, projectTypeKey, projectLead, description=""):
         "description": description,
         "lead": projectLead
     }
+    print(new_project)
+    exit(0)
     
     response = requests.get(f"{config.PROJECT_URL}/{new_project['key']}", headers=headers)
 
